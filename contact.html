@@ -123,6 +123,33 @@
     <footer>
         <p>2024 My Portfolio</p>
     </footer>
+
+    <script>
+        // Form validation code
+        function validateForm() {
+            // Declaring the form fields
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            // If statement to check if the fields are empty
+            if (name === "" || email === "" || message === "") {
+                alert("All fields are required!");
+                return false; // Prevent form submission
+            }
+
+            //  Email validation
+            var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!email.match(emailPattern)) {
+                alert("Please enter a valid email address.");
+                return false; // Prevent the form submission
+            }
+
+            return true; // Allow the form submission if validation passes
+        }
+     </script>
+
+    
 </body>
 </html>
 
