@@ -21,7 +21,7 @@
             line-height: 1.6;
         }
 
-        /* Navigation bar color */
+        /* Navigation bar styling */
         nav {
             background-color: #333;
             padding: 10px 0;
@@ -47,7 +47,7 @@
             text-decoration: underline;
         }
 
-        /* Contact styling */
+        /* Contact section styling */
         section {
             padding: 20px;
             margin: 20px auto;
@@ -57,6 +57,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+	/* Form layout using flexbox for stacking items */ 
         form {
             display: flex;
             flex-direction: column;
@@ -65,19 +66,19 @@
         label, input, textarea {
             margin: 10px 0;
         }
-
+	/* Padding and border styling for the input fields */
         input, textarea {
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-
+	/* Styling for the submit button */
         input[type="submit"] {
             background-color: #333;
             color: white;
             cursor: pointer;
         }
-
+	/* Hover effect */
         input[type="submit"]:hover {
             background-color: #555;
         }
@@ -93,7 +94,7 @@
     </style>
 </head>
 <body>
-    
+    <!-- Navigation Bar --> 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -102,7 +103,7 @@
         </ul>
     </nav>
 
-    
+    <!-- Contact Form -->
     <section class="contact-content">
         <h1>Contact Me</h1>
         <form id="contactForm" method="POST" action="/submit-form">
@@ -119,11 +120,12 @@
         </form>
     </section>
 
-    
+    <!-- Footer --> 
     <footer>
         <p>2024 My Portfolio</p>
     </footer>
 
+    <!-- JavaScript for form validation-->
     <script>
         // Form validation code
         function validateForm() {
@@ -145,7 +147,7 @@
                 return false; // Prevent the form submission
             }
 
-            return true; // Allow the form submission if validation passes
+            return true; // Allow the form submission to go through if validation passes
         }
      </script>
 
