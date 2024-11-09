@@ -17,11 +17,11 @@ app.get('/', (req, res) => {
  app.post('/submit-form', (req, res) => { 
     const { name, email, message } = req.body; // access form data 
 
-    // Code to send the form data to the form data to the terminal
+    // Code to send the form data to the terminal for confirmation
     console.log(`Received message from ${name} (${email}): ${message}`); 
 
 
-    // Validation to the client indicating success 
+    // Validation for the user indicating success 
     res.send('Your message has been received successfully!'); 
 
 }); 
