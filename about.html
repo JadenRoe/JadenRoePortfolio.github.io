@@ -75,6 +75,29 @@
         .about-text p {
             margin-bottom: 15px;
         }
+	/* Code to improve the responsive design of the website for screens 768px or smaller */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 10px;
+                margin: 10px auto;
+            }
+        }
+
+        /* Responsive design for screens 480px or smaller */
+        @media (max-width: 480px) {
+            section {
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
 
         /* Footer styling */
         footer {
